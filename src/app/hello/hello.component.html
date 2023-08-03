@@ -1,0 +1,10 @@
+<div id="body">
+    <h1>{{title}}</h1>
+    <p>{{message}}</p>
+    <p>TYPE:{{text1}}</p>
+    <input type="text" [(ngModel)]="text1">
+
+    <p>{{message2}}</p>
+    <p>TYPE:{{myControl.value}}</p>
+    <input type="text" [formControl]="myControl">
+</div>
