@@ -7,4 +7,36 @@
     <p>{{message2}}</p>
     <p>TYPE:{{myControl.value}}</p>
     <input type="text" [formControl]="myControl">
+
+    <p>{{message3}}</p>
+    <input type="text" [formControl]="myControl2" />
+    <button (click)="doClick()">Click</button>
+
+    <p>{{message4}}</p>
+    <form [formGroup]="formGroup" (ngSubmit)="onSubmit()">
+        <table>
+            <tr>
+                <th>Name</th>
+                <td>
+                    <input type="text" formControlName="name">
+                </td>
+            </tr>
+            <tr>
+                <th>Mail</th>
+                <td>
+                    <input type="text" formControlName="Mail">
+                </td>
+            </tr>
+            <tr>
+                <th>Age</th>
+                <td>
+                    <input type="number" formControlName="age">
+                </td>
+            </tr>
+            <tr>
+                <th></th>
+                <td><input type="submit" value="click" /></td>
+            </tr>
+        </table>
+    </form>
 </div>
